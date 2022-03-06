@@ -27,10 +27,6 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
 
-        Toast.makeText(this, BuildConfig.API_KEY,Toast.LENGTH_SHORT).show()
-
-
-
         spinnerDepartment=findViewById(R.id.permanantAddressEditText)
         spinnerYear=findViewById(R.id.editTextName)
         button=findViewById(R.id.nextButtonFirstRegistration)
