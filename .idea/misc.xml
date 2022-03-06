@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Androidproject/StudentRegistration/app/src/main/res/drawable/drop_down_border.xml" value="0.1" />
+        <entry key="..\:/Androidproject/StudentRegistration/app/src/main/res/drawable/edit_text_border.xml" value="0.1" />
+        <entry key="..\:/Androidproject/StudentRegistration/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.133" />
+        <entry key="..\:/Androidproject/StudentRegistration/app/src/main/res/drawable/spinner_border.xml" value="0.1" />
+        <entry key="..\:/Androidproject/StudentRegistration/app/src/main/res/layout/activity_dash_board.xml" value="0.1796875" />
+        <entry key="..\:/Androidproject/StudentRegistration/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Androidproject/StudentRegistration/app/src/main/res/layout/activity_second_registration.xml" value="0.1796875" />
+        <entry key="..\:/Androidproject/StudentRegistration/app/src/main/res/layout/basic_details_registration.xml" value="0.1796875" />
+        <entry key="..\:/Androidproject/StudentRegistration/app/src/main/res/layout/custom_toolbar.xml" value="0.1796875" />
+        <entry key="..\:/Androidproject/StudentRegistration/app/src/main/res/layout/navigation_header.xml" value="0.1796875" />
+        <entry key="..\:/Androidproject/StudentRegistration/app/src/main/res/layout/single_card_view.xml" value="0.1796875" />
+        <entry key="..\:/Androidproject/StudentRegistration/app/src/main/res/menu/side_navigation_ment.xml" value="0.1796875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
