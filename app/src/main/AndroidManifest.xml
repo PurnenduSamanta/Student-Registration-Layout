@@ -15,10 +15,12 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".SecondRegistrationActivity"
+            android:theme="@style/HiddenTitleTheme"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity"
+            android:theme="@style/HiddenTitleTheme"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

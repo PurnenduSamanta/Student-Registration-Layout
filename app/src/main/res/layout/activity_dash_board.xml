@@ -26,8 +26,7 @@
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:paddingHorizontal="10dp"
+            android:padding="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
             tools:listitem="@layout/single_card_view" />
@@ -41,7 +40,6 @@
         app:headerLayout="@layout/navigation_header"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:itemTextColor="@color/black"
         app:menu="@menu/side_navigation_ment"
         android:id="@+id/snv"
         android:layout_gravity="start" />

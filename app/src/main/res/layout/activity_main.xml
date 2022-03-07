@@ -10,11 +10,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="0dp"
         android:background="@drawable/registration_page_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.55">
 
 
         <ImageView
@@ -32,6 +33,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Registration"
             android:textColor="@color/white"
             android:textSize="25sp"
@@ -46,12 +48,13 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.5"
         android:layout_marginStart="20dp"
         android:layout_marginTop="-130dp"
         android:layout_marginEnd="20dp"
         android:elevation="5dp"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
@@ -71,7 +74,7 @@
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+                app:layout_constraintTop_toBottomOf="@+id/textInputField1" />
 
             <TextView
                 android:id="@+id/nameTextView"
@@ -85,26 +88,49 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
 
-
-
-            <Spinner
-                android:id="@+id/editTextName"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputField1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
+                app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+                android:hint="Year"
+                android:orientation="horizontal">
 
 
-            <Spinner
-                android:id="@+id/permanantAddressEditText"
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputField2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:hint="CSE"
+                android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/permanantAddressEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -120,10 +146,11 @@
         android:id="@+id/nextButtonFirstRegistration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="-25dp"
-        android:layout_marginEnd="50dp"
-        android:paddingVertical="10dp"
+        android:elevation="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="60dp"
+        android:paddingVertical="15dp"
         android:text="Next"
         android:textAllCaps="false"
         app:cornerRadius="20dp"
